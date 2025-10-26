@@ -1,23 +1,25 @@
-class Animal(object):
-    makes_noise:bool = False
+def fibonacci_iterativo(n):
 
-    def make_noise(self: "Animal") -> object:
-        if (self.makes_noise):
-            print(self.sound())
+    # Casos base de la secuencia (F0=0, F1=1)
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
 
-    def sound(self: "Animal") -> str:
-	return "???"
+    # Inicializamos los dos primeros números
+    a, b = 0, 1
 
-class Cow(Animal):
-    def __init__(self: "Cow"):
+    # Iteramos n-1 veces para llegar al n-ésimo término
+    # (ya que el primer término, F1, ya está en 'b')
+    for _ in range(n - 1):
+        # El nuevo 'a' es el antiguo 'b'
+        # El nuevo 'b' es la suma de los dos anteriores (antiguo a + antiguo b)
+        a, b = b, a + b
 
-	self.makes_noise = True
-    def sound(self: "Cow") -> str:
-	return "moo"
-
-c:Animal = None
-c = Cow()
-c.make_noise()		 # Prints "moo"
-
+    # 'b' contiene el n-ésimo número de Fibonacci
+    return b
 
 
+# --- Ejemplo de uso ---
+n_termino = 10
+resultado = fibonacci_iterativo(n_termino)
