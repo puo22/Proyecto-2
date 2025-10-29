@@ -1,25 +1,59 @@
-def fibonacci_iterativo(n):
-
-    # Casos base de la secuencia (F0=0, F1=1)
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-
-    # Inicializamos los dos primeros números
-    a, b = 0, 1
-
-    # Iteramos n-1 veces para llegar al n-ésimo término
-    # (ya que el primer término, F1, ya está en 'b')
-    for _ in range(n - 1):
-        # El nuevo 'a' es el antiguo 'b'
-        # El nuevo 'b' es la suma de los dos anteriores (antiguo a + antiguo b)
-        a, b = b, a + b
-
-    # 'b' contiene el n-ésimo número de Fibonacci
-    return b
+# 1. Importaciones
+# Importamos el módulo 'math' (aunque solo lo usamos para un cálculo simple)
+import math
+# 2. Clases
+class Contador:
+    # 3. Funciones (un método, el constructor)
+    def _init_(self, valor_inicial):
+        # 4. Asignaciones
+        print("bienvenido")
 
 
-# --- Ejemplo de uso ---
-n_termino = 10
-resultado = fibonacci_iterativo(n_termino)
+# 3. Funciones (una función normal)
+def es_positivo(numero):
+    # 5. Condicionales (if/else)
+    # 6. Expresiones (de comparación)
+    if numero > 0:
+        # 7. Return
+        return "Positivo"
+    else:
+        # 7. Return
+        return "No Positivo"
+
+
+# --- Aquí comienza la ejecución principal ---
+
+print("--- Inicio del Script ---")
+
+# 4. Asignaciones (creamos una instancia de la clase)
+mi_contador = Contador(3)
+
+# 8. Bucles (While)
+print("Iniciando bucle 'while':")
+while mi_contador > 0:
+    # 9. Print
+    print("El contador vale:")
+
+    # 4. Asignaciones y 6. Expresiones (aritmética)
+    mi_contador = mi_contador - 1  # Restamos 1
+
+print("--- Fin del bucle 'while' ---")
+
+# 4. Asignaciones (creamos una lista)
+lista_numeros = [2, 5, 10]
+
+# 8. Bucles (For)
+print("Iniciando bucle 'for':")
+for num in lista_numeros:
+    # 4. Asignaciones (guardamos el resultado de una función)
+    # 6. Expresiones (llamada a una función)
+    estado = es_positivo(num)
+
+    # 9. Print (usando la asignación anterior)
+    print("El número")
+
+    # 6. Expresiones (usando el módulo importado 'math')
+    potencia = math(num, 2)  # Eleva el número al cuadrado
+    print("Su cuadrado es:")
+
+print("--- Fin del Script ---")

@@ -1,91 +1,183 @@
-<def,1,1>
-<id,fibonacci_iterativo,1,5>
-<tk_par_izq,1,24>
-<id,n,1,25>
-<tk_par_der,1,26>
-<tk_dos_puntos,1,27>
-<NEWLINE,\n,1,28>
-<NEWLINE,\n,2,1>
-<NEWLINE,\n,3,46>
-<INDENT, ,4,1>
-<if,4,5>
-<id,n,4,8>
-<tk_menor_igual,4,10>
-<tk_entero,0,4,13>
-<tk_dos_puntos,4,14>
-<NEWLINE,\n,4,15>
-<INDENT, ,5,1>
-<return,5,9>
-<tk_entero,0,5,16>
-<NEWLINE,\n,5,17>
-<DEDENT, ,6,1>
-<elif,6,5>
-<id,n,6,10>
-<tk_igualdad,6,12>
-<tk_entero,1,6,15>
-<tk_dos_puntos,6,16>
-<NEWLINE,\n,6,17>
+<NEWLINE,\n,1,19>
+<NEWLINE,\n,2,77>
+<import,3,1>
+<id,math,3,8>
+<NEWLINE,\n,3,12>
+<NEWLINE,\n,4,12>
+<class,5,1>
+<id,Contador,5,7>
+<tk_dos_puntos,5,15>
+<NEWLINE,\n,5,16>
+<NEWLINE,\n,6,47>
 <INDENT, ,7,1>
-<return,7,9>
-<tk_entero,1,7,16>
-<NEWLINE,\n,7,17>
-<NEWLINE,\n,8,1>
-<NEWLINE,\n,9,45>
-<DEDENT, ,10,1>
-<id,a,10,5>
-<tk_coma,10,6>
-<id,b,10,8>
-<tk_asig,10,10>
-<tk_entero,0,10,12>
-<tk_coma,10,13>
-<tk_entero,1,10,15>
-<NEWLINE,\n,10,16>
+<def,7,5>
+<id,_init_,7,9>
+<tk_par_izq,7,15>
+<id,self,7,16>
+<tk_coma,7,20>
+<id,valor_inicial,7,22>
+<tk_par_der,7,35>
+<tk_dos_puntos,7,36>
+<NEWLINE,\n,7,37>
+<NEWLINE,\n,8,26>
+<INDENT, ,9,1>
+<print,9,9>
+<tk_par_izq,9,14>
+<tk_cadena,"bienvenido",9,15>
+<tk_par_der,9,27>
+<NEWLINE,\n,9,28>
+<NEWLINE,\n,10,1>
 <NEWLINE,\n,11,1>
-<NEWLINE,\n,12,56>
-<NEWLINE,\n,13,53>
-<for,14,5>
-<id,_,14,9>
-<in,14,11>
-<id,range,14,14>
-<tk_par_izq,14,19>
-<id,n,14,20>
-<tk_resta,14,22>
-<tk_entero,1,14,24>
-<tk_par_der,14,25>
-<tk_dos_puntos,14,26>
-<NEWLINE,\n,14,27>
-<NEWLINE,\n,15,41>
-<NEWLINE,\n,16,80>
-<INDENT, ,17,1>
-<id,a,17,9>
-<tk_coma,17,10>
-<id,b,17,12>
-<tk_asig,17,14>
-<id,b,17,16>
-<tk_coma,17,17>
-<id,a,17,19>
-<tk_suma,17,21>
-<id,b,17,23>
-<NEWLINE,\n,17,24>
-<NEWLINE,\n,18,1>
-<NEWLINE,\n,19,50>
-<DEDENT, ,20,1>
-<return,20,5>
-<id,b,20,12>
-<NEWLINE,\n,20,13>
-<NEWLINE,\n,21,1>
+<NEWLINE,\n,12,36>
+<DEDENT, ,13,1>
+<DEDENT, ,13,1>
+<def,13,1>
+<id,es_positivo,13,5>
+<tk_par_izq,13,16>
+<id,numero,13,17>
+<tk_par_der,13,23>
+<tk_dos_puntos,13,24>
+<NEWLINE,\n,13,25>
+<NEWLINE,\n,14,33>
+<NEWLINE,\n,15,38>
+<INDENT, ,16,1>
+<if,16,5>
+<id,numero,16,8>
+<tk_mayor,16,15>
+<tk_entero,0,16,17>
+<tk_dos_puntos,16,18>
+<NEWLINE,\n,16,19>
+<NEWLINE,\n,17,20>
+<INDENT, ,18,1>
+<return,18,9>
+<tk_cadena,"Positivo",18,16>
+<NEWLINE,\n,18,26>
+<DEDENT, ,19,1>
+<else,19,5>
+<tk_dos_puntos,19,9>
+<NEWLINE,\n,19,10>
+<NEWLINE,\n,20,20>
+<INDENT, ,21,1>
+<return,21,9>
+<tk_cadena,"No Positivo",21,16>
+<NEWLINE,\n,21,29>
 <NEWLINE,\n,22,1>
-<NEWLINE,\n,23,25>
-<DEDENT, ,24,1>
-<id,n_termino,24,1>
-<tk_asig,24,11>
-<tk_entero,10,24,13>
-<NEWLINE,\n,24,15>
-<id,resultado,25,1>
-<tk_asig,25,11>
-<id,fibonacci_iterativo,25,13>
-<tk_par_izq,25,32>
-<id,n_termino,25,33>
-<tk_par_der,25,42>
-<NEWLINE,\n,25,43>
-<EOF, ,26,1>
+<NEWLINE,\n,23,1>
+<NEWLINE,\n,24,47>
+<NEWLINE,\n,25,1>
+<DEDENT, ,26,1>
+<DEDENT, ,26,1>
+<print,26,1>
+<tk_par_izq,26,6>
+<tk_cadena,"--- Inicio del Script ---",26,7>
+<tk_par_der,26,34>
+<NEWLINE,\n,26,35>
+<NEWLINE,\n,27,1>
+<NEWLINE,\n,28,54>
+<id,mi_contador,29,1>
+<tk_asig,29,13>
+<id,Contador,29,15>
+<tk_par_izq,29,23>
+<tk_entero,3,29,24>
+<tk_par_der,29,25>
+<NEWLINE,\n,29,26>
+<NEWLINE,\n,30,1>
+<NEWLINE,\n,31,20>
+<print,32,1>
+<tk_par_izq,32,6>
+<tk_cadena,"Iniciando bucle 'while':",32,7>
+<tk_par_der,32,33>
+<NEWLINE,\n,32,34>
+<while,33,1>
+<id,mi_contador,33,7>
+<tk_mayor,33,19>
+<tk_entero,0,33,21>
+<tk_dos_puntos,33,22>
+<NEWLINE,\n,33,23>
+<NEWLINE,\n,34,15>
+<INDENT, ,35,1>
+<print,35,5>
+<tk_par_izq,35,10>
+<tk_cadena,"El contador vale:",35,11>
+<tk_par_der,35,30>
+<NEWLINE,\n,35,31>
+<NEWLINE,\n,36,1>
+<NEWLINE,\n,37,52>
+<id,mi_contador,38,5>
+<tk_asig,38,17>
+<id,mi_contador,38,19>
+<tk_resta,38,31>
+<tk_entero,1,38,33>
+<NEWLINE,\n,38,48>
+<NEWLINE,\n,39,1>
+<DEDENT, ,40,1>
+<print,40,1>
+<tk_par_izq,40,6>
+<tk_cadena,"--- Fin del bucle 'while' ---",40,7>
+<tk_par_der,40,38>
+<NEWLINE,\n,40,39>
+<NEWLINE,\n,41,1>
+<NEWLINE,\n,42,38>
+<id,lista_numeros,43,1>
+<tk_asig,43,15>
+<tk_cor_izq,43,17>
+<tk_entero,2,43,18>
+<tk_coma,43,19>
+<tk_entero,5,43,21>
+<tk_coma,43,22>
+<tk_entero,10,43,24>
+<tk_cor_der,43,26>
+<NEWLINE,\n,43,27>
+<NEWLINE,\n,44,1>
+<NEWLINE,\n,45,18>
+<print,46,1>
+<tk_par_izq,46,6>
+<tk_cadena,"Iniciando bucle 'for':",46,7>
+<tk_par_der,46,31>
+<NEWLINE,\n,46,32>
+<for,47,1>
+<id,num,47,5>
+<in,47,9>
+<id,lista_numeros,47,12>
+<tk_dos_puntos,47,25>
+<NEWLINE,\n,47,26>
+<NEWLINE,\n,48,62>
+<NEWLINE,\n,49,45>
+<INDENT, ,50,1>
+<id,estado,50,5>
+<tk_asig,50,12>
+<id,es_positivo,50,14>
+<tk_par_izq,50,25>
+<id,num,50,26>
+<tk_par_der,50,29>
+<NEWLINE,\n,50,30>
+<NEWLINE,\n,51,1>
+<NEWLINE,\n,52,47>
+<print,53,5>
+<tk_par_izq,53,10>
+<tk_cadena,"El número",53,11>
+<tk_par_der,53,22>
+<NEWLINE,\n,53,23>
+<NEWLINE,\n,54,1>
+<NEWLINE,\n,55,57>
+<id,potencia,56,5>
+<tk_asig,56,14>
+<id,math,56,16>
+<tk_par_izq,56,20>
+<id,num,56,21>
+<tk_coma,56,24>
+<tk_entero,2,56,26>
+<tk_par_der,56,27>
+<NEWLINE,\n,56,59>
+<print,57,5>
+<tk_par_izq,57,10>
+<tk_cadena,"Su cuadrado es:",57,11>
+<tk_par_der,57,28>
+<NEWLINE,\n,57,29>
+<NEWLINE,\n,58,1>
+<DEDENT, ,59,1>
+<print,59,1>
+<tk_par_izq,59,6>
+<tk_cadena,"--- Fin del Script ---",59,7>
+<tk_par_der,59,31>
+<EOF, ,59,32>
