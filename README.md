@@ -47,20 +47,7 @@ Proyecto2/
 ── salida parser.txt # Resultados del analizador sintáctico
 ── README.md # Este archivo
 
----
 
-
-## Ejecución del analizador
-
-### 1️. Generar los tokens
-
-Primero, se ejecuta el analizador léxico:
-
-```bash
-python lexer.py
-´´´´
-
-### Ejecutar el analizador sintáctico
 
 
 
