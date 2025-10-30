@@ -1,7 +1,10 @@
 # Proyecto 2: Analizador Sintáctico en Python
 
-## Descripción
+Co-authored-by: 
++ Sofía Londoño 
++ Paula Ortiz
 
+## Descripción
 Este proyecto implementa un analizador sintáctico descendente predictivo en Python.  
 El analizador toma como entrada una lista de tokens generada por el analizador léxico (`lexer.py`) y valida si el código fuente cumple con la gramática definida.
 
@@ -16,7 +19,6 @@ Soporta estructuras como:
 ---
 
 ## Funcionamiento general
-
 El flujo de análisis se realiza en tres etapas principales:
 
 1. **Análisis Léxico** → Generado por `lexer.py`, produce el archivo `salida_tokens.txt`.
@@ -26,15 +28,16 @@ El flujo de análisis se realiza en tres etapas principales:
 El parser está implementado como un analizador descendente predictivo LL(1), que lee de izquierda a derecha y genera derivaciones por la izquierda.  
 Cada regla gramatical se implementa como un método `parse_*` dentro de la clase `Parser`.
 
+
 ---
 
 ## Características principales
-
 - **Tipo de parser:** LL(1) descendente recursivo.   
 - **Manejo de errores:**  
   - Errores sintácticos detallados con línea y columna.  
   - Errores específicos de indentación.  
   - Manejo de tokens inesperados.  
+
 
 ---
 
@@ -46,6 +49,35 @@ Proyecto2/
 ── salida_tokens.txt # Salida del analizador léxico
 ── salida parser.txt # Resultados del analizador sintáctico
 ── README.md # Este archivo
+
+
+---
+
+## Ejecución del analizador
+
+### 1️. Generar los tokens
+Primero, ejecuta el analizador léxico:
+```bash
+python lexer.py
+```
+### 2. Ejecutar el analizador sintáctico
+```bash
+python analisis_gramatica.py
+```
+
+-Si todo está corracto, en consola se muestra: 
+```bash
+Análisis sintáctico finalizado correctamente.
+```
+
+
+---
+
+## Pruebas realizadas
+
+
+
+
 
 
 
